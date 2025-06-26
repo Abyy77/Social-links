@@ -1,57 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
-*{
-    margin: none;
-    padding:none;
-    box-sizing: border-box;
-    font-family: 'inter'; 
+* {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+  font-family: "inter";
 }
-body{
-    overflow: hidden;
-    background-color:hsl(0, 0%, 8% );
+body {
+  overflow: hidden;
+  background-color: hsl(0, 0%, 8%);
 }
 
 /* for laptop */
- .phone{
+.phone {
   display: none;
 }
-.laptop{
-    display: block;
-  }
-
-.container{
-    width: 100%;
-    height: 100vh;
-    display:flex;
-    gap:1rem;
-    justify-content: center;
-    align-items: center; 
+.laptop {
+  display: block;
 }
 
-.sub{
-     width: 400px;
-    height: 100%;
-    display:grid;
-    place-items: center;
-    gap:0.5rem;
-    background-color: hsl(0, 0%, 12%);
-    border-radius: 20px;
-    padding: 30px;
+.container {
+  height: 100vh;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub {
+  width: 400px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 20px;
+  padding: 30px;
 }
 
 .sub img {
-    width:18vh;
-    height: auto;
-    border-radius: 100px;
+  width: 18vh;
+  height: auto;
+  border-radius: 100px;
 }
 
-.sub .text {  
-    text-align: center;
+.sub .text {
+  text-align: center;
 }
 
-.sub h1{
-     color: white;
-     font-weight: 500;
+.sub h1 {
+  color: white;
+  font-weight: 500;
 }
 
 .sub p {
@@ -61,130 +60,60 @@ body{
   font-weight: 500;
 }
 
-#p2{
+#p2 {
   color: rgb(134, 134, 134);
   margin-top: 2rem;
 }
 
-.btn{
- display: flex;
-  flex-direction:row;
+.btn {
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   height: 40px;
   margin: 3px;
-  width: 330px;
+  width: 82.5%;
   color: white;
   background-color: hsl(0, 0%, 20%);
   border-radius: 8px;
   border: none;
   font-weight: 500;
   font-size: 14px;
-  text-decoration: none;  
-  }
-
-.btn:hover{
-   background-color: hsl(75, 94%, 57%);
-   cursor: pointer;
-   color: black;
+  text-decoration: none;
 }
 
-
-
-
-
-
-
+.btn:hover {
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
+  color: black;
+}
 
 /* for phone */
 @media (max-width: 375px) {
- .phone{
-  display: none;
-}
-.laptop{
-    display: block;
-  }
-
-.container{
+  .container {
     width: 100%;
-    height: 100vh;
-    display:flex;
-    gap:1rem;
-    justify-content: center;
-    align-items: center; 
-}
-
-.sub{
-     width: 350px;
-    height: 100%;
-    display:grid;
-    place-items: center;
-    gap:0.5rem;
-    background-color: hsl(0, 0%, 12%);
-    border-radius: 20px;
-    padding: 30px;
-}
-
-.sub img {
-    width:18vh;
-    height: auto;
-    border-radius: 100px;
-}
-
-.sub .text {  
-    text-align: center;
-}
-
-.sub h1{
-     color: white;
-     font-weight: 300;
-}
-
-.sub p {
-  color: hsl(75, 94%, 57%);
-  margin-top: -0.8rem;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-#p2{
-  color: rgb(134, 134, 134);
-  margin-top: 2rem;
-}
-
-.btn{
- display: flex;
-  flex-direction:row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  height: 40px;
-  margin: 3px;
-  width: 290px;
-  color: white;
-  background-color: hsl(0, 0%, 20%);
-  border-radius: 8px;
-  border: none;
-  font-weight: 300;
-  font-size: 12px;
-  text-decoration: none;  
   }
 
-.btn:hover{
-   background-color: hsl(75, 94%, 57%);
-   cursor: pointer;
-   color: black;
+  .sub {
+    width: 350px;
+  }
+
+  .sub h1 {
+    font-weight: 300;
+
+  }
+
+  .sub p {
+    font-size: 14px;
+    font-weight: 300;
+  
+  }
+
+
+  .btn {
+    font-weight: 300;
+    font-size: 12px;
+  }
 }
-
-}
-
-
-
-
-
-
-
-
 
 
